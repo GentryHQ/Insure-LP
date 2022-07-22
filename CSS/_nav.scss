@@ -1,0 +1,42 @@
+.menu-bar {
+    z-index: 100;
+    @extend .flex;
+    height: 80px;
+     min-height: 10vh;
+     background-color: $white;
+     
+     
+
+     li {
+        display: inline;
+        padding-left: 20px;
+        font-size: 14px;
+
+        a{
+            color: $Dark-Grayish-Violet;
+        }
+
+        a:hover {
+            color: $darkViolet;
+        }
+     }
+
+     .btn {
+        border-color: $darkViolet;
+        color: $darkViolet !important;
+     }
+
+     .btn:hover {
+        background-color: $darkViolet;
+        color: $white !important;
+     }
+}
+
+
+.ham {
+        display: none;
+     }
+
+
+
+

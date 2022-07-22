@@ -1,0 +1,187 @@
+// Google Fonts for Project
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+// Variables
+@import "variables";
+
+// Reset and Reuseable
+@import "utilities";
+
+// Navigation Styles
+@import "nav";
+
+// Media Queries
+@import "media";
+
+// Animation
+@import "animation";
+
+body {
+  position: relative;
+}
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: $darkViolet;
+  color: $white;
+  text-align: center;
+}
+
+.hero-img {
+  display: block;
+  width: 100vw;
+}
+
+.text-box {
+  padding: 100px 20px;
+  background-image: url("../images/bg-pattern-intro-left-mobile.svg"),
+    url("../images/bg-pattern-intro-right-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right bottom;
+  z-index: 50;
+  
+
+  h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    animation: fadeInUp 2s ease-in-out;
+    @include FadeIn;
+  }
+
+  p {
+    margin-bottom: 20px;
+    animation: fadeInUp 2s ease-in;
+    @include FadeIn;
+  }
+
+  .btn {
+    border-color: $white;
+    color: $white;
+
+    &:hover {
+      color: $darkViolet;
+      background-color: $white
+    }
+  }
+
+  .line {
+    display: none;
+  }
+}
+
+.features {
+  text-align: center;
+  padding: 100px 20px 100px;
+
+  .line {
+    margin: auto;
+    background-color: $Grayish-Blue;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 2.3rem;
+  }
+
+  .card {
+    margin-top: 50px;
+
+    img{
+      width: 60px;
+    }
+
+    h4 {
+      margin: 20px 0 30px;
+      font-size: 1.4rem;
+    }
+    p {
+      color: $Dark-Grayish-Violet;
+    }
+  }
+}
+
+
+.cta {
+  background-color: $darkViolet;
+  background-image: url("../images/bg-pattern-how-we-work-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  padding: 100px 50px;
+  text-align: center;
+  color: white;
+
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    animation: fadeInUp 2s ease-in-out;
+    @include FadeIn;
+  }
+  .btn {
+    border-color: $white;
+    color: $white;
+    display: inline-block;
+  }
+  .btn:hover {
+    color: $darkViolet;
+    background-color: $white;
+  }
+}
+
+.footer {
+  margin-top: 150px;
+  padding-bottom: 150px;
+  background-color: $Very-Light-Gray;
+  background-image: url("../images/bg-pattern-footer-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  .foot-head {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+
+  a:hover {
+    color: $darkViolet;
+  }
+
+  .social {
+    padding: 0 5px;
+
+  }
+
+  .line {
+    width: 100%;
+    background-color: lighten($color: $Very-Dark-Violet, $amount: 70%);
+  }
+
+  .foot-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+
+    h5 {
+      text-transform: uppercase;
+      padding: 30px 0;
+      font-family: $font2;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: $Dark-Grayish-Violet;
+      font-size: 0.9rem;
+    }
+
+    li {
+      font-size: 14px;
+      padding-bottom: 0.7rem;
+    }
+  }
+}
+
+
