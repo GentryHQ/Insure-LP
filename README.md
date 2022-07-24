@@ -41,8 +41,8 @@ Mobile View
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/GentryHQ/)
-- Live Site URL: [Github Pages](https://gentryhq.github.io/)
+- Solution URL: [Github Repo](https://github.com/GentryHQ/Insure-LP)
+- Live Site URL: [Github Pages](https://gentryhq.github.io/Insure-LP/)
 
 ## My process
 
